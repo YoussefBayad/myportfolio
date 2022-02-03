@@ -18,7 +18,7 @@ const Hero = (props) => (
           My Personal Portfolio
         </SectionTitle>
         <SectionText>
-          I’m Joseph Bayad and I’m a Front-end developer!{' '}
+          Hi there👋 I’m Joseph Bayad and I’m a Front-end web developer!
         </SectionText>
         <Link href='#tech'>
           <Button onClick={props.handleClick}>Learn More</Button>
