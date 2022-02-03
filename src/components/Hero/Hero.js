@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 
 import {
@@ -7,10 +7,17 @@ import {
   SectionTitle,
 } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
+import NavDropDown from '../NavDropDown';
 import { LeftSection } from './HeroStyles';
 
-const Hero = (props) => (
-  <>
+const Hero = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen((prev) => !prev);
+  };
+
+  return (
     <Section row nopadding>
       <LeftSection>
         <SectionTitle main center>
@@ -20,12 +27,13 @@ const Hero = (props) => (
         <SectionText>
           Hi there👋 I’m Joseph Bayad and I’m a Front-end web developer!
         </SectionText>
-        <Link href='#tech'>
-          <Button onClick={props.handleClick}>Learn More</Button>
-        </Link>
+        <Button form onClick={handleClick}>
+          Contact Me
+        </Button>
+        <NavDropDown isOpen={isOpen} />
       </LeftSection>
     </Section>
-  </>
-);
+  );
+};
 
 export default Hero;

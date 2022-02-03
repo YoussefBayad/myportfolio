@@ -3,7 +3,7 @@ import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
 import { SocialLinks } from '../../constants/constants';
-
+import NavDropDown from '../NavDropDown';
 import {
   Container,
   Div1,
@@ -26,6 +26,11 @@ const Header = () => (
       <li>
         <Link href='#projects'>
           <NavLink>Projects</NavLink>
+        </Link>
+      </li>
+      <li>
+        <Link href='#contact'>
+          <NavLink>Contact</NavLink>
         </Link>
       </li>
       <li>
