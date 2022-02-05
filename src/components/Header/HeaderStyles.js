@@ -1,8 +1,22 @@
 import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
+import { keyframes } from '@emotion/react';
 
-export const Container = styled.div`
-  position: 'fixed';
+const positionAnim = keyframes`
+  from {
+    position: fixed;
+    opacity: 1;
+  }
+
+  to {
+    position: absolute;
+    opacity: 1;
+    transition: all 0.4s ease;
+  }
+`;
+
+export const Container = styled.header`
+  position: 'absolute';
   top: 0;
   left: 0;
   display: grid;
@@ -15,12 +29,22 @@ export const Container = styled.div`
   background-color: 'transparent';
   transition: 'all 0.4s ease';
 
-  /* &.sticky: {
+  /* py: 4; */
+  width: '100%';
+
+  animation: ${positionAnim} 0.4s ease;
+  /* &.donate__btn: {
+      flexShrink: 0;
+      mr: [15; 20; null; null; 0];
+      ml: ['auto'; null; null; null; 0];
+    }; */
+  &.sticky {
+    position: 'fixed';
     background-color: 'background';
-    color: 'text';
-    padding: '15px 0';
+    color: '#000000';
     box-shadow: '0 1px 2px rgba(0, 0, 0, 0.06)';
-  } */
+    padding: 3 0;
+  }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
