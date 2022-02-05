@@ -1,9 +1,10 @@
-import Link from 'next/link';
 import React from 'react';
+import { Link } from 'react-scroll';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
 import { SocialLinks } from '../../constants/constants';
 import NavDropDown from '../NavDropDown';
+import MobileDrawer from '../mobileDrawer';
 import {
   Container,
   Div1,
@@ -13,8 +14,8 @@ import {
   SocialIcons,
 } from './HeaderStyles';
 
-const Header = () => (
-  <Container>
+const Header = ({ className }) => (
+  <Container className={className} id='headers'>
     <Div1>
       <Link href='/'>
         <a style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
@@ -55,6 +56,7 @@ const Header = () => (
         <AiFillInstagram size='3rem' />
       </SocialIcons>
     </Div3>
+    <MobileDrawer />
   </Container>
 );
 
