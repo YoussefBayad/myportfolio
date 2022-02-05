@@ -1,3 +1,5 @@
+import React from 'react';
+import { StickyProvider } from '../contexts/app/app.provider';
 import Acomplishments from '../components/Acomplishments/Acomplishments';
 import BgAnimation from '../components/BackgrooundAnimation/BackgroundAnimation';
 import Hero from '../components/Hero/Hero';
@@ -9,16 +11,18 @@ import { Section } from '../styles/GlobalComponents';
 
 const Home = () => {
   return (
-    <Layout>
-      <Section grid>
-        <Hero />
-        <BgAnimation />
-      </Section>
-      <Projects />
-      <Technologies />
-      <Timeline />
-      <Acomplishments />
-    </Layout>
+    <StickyProvider>
+      <Layout>
+        <Section grid>
+          <Hero />
+          <BgAnimation />
+        </Section>
+        <Projects />
+        <Technologies />
+        <Timeline />
+        <Acomplishments />
+      </Layout>
+    </StickyProvider>
   );
 };
 
