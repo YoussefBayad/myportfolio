@@ -30,10 +30,7 @@ export default function Drawer({
         {Close && <Close onClick={toggleHandler}>{closeButton}</Close>}
         <DrawerBox>{children} </DrawerBox>
       </RcDrawer>
-      <div
-        className='drawer__handler'
-        style={{ display: 'inline-block' }}
-        onClick={toggleHandler}>
+      <div style={{ display: 'inline-block' }} onClick={toggleHandler}>
         {drawerHandler}
       </div>
     </>

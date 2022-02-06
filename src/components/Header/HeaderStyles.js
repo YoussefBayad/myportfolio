@@ -48,9 +48,9 @@ export const Div2 = styled.div`
   width: 50%;
   display: flex;
   justify-content: space-between;
-  /* @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 2 / 2 / 3 / 5;
-  } */
+  @media ${(props) => props.theme.breakpoints.lg} {
+    display: none;
+  }
 `;
 export const Div3 = styled.div`
   grid-area: 1 / 5 / 2 / 6;
@@ -58,8 +58,7 @@ export const Div3 = styled.div`
   justify-content: space-around;
   align-items: center;
   @media ${(props) => props.theme.breakpoints.sm} {
-    align-items: center;
-    grid-area: 1 / 4 / 2 / 6;
+    display: none;
   }
 `;
 
