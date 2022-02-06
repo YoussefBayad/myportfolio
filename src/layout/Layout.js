@@ -17,12 +17,14 @@ export const Layout = ({ children }) => {
   };
 
   return (
-    <Container>
+    <>
       <Sticky innerZ={1001} top={0} onStateChange={handleStateChange}>
         <Header className={`${isSticky ? 'sticky' : 'unSticky'}`} />
       </Sticky>
-      <main>{children}</main>
-      <Footer />
-    </Container>
+      <Container>
+        <main>{children}</main>
+        <Footer />
+      </Container>
+    </>
   );
 };
