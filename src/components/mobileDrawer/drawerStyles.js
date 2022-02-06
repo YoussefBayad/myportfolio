@@ -15,10 +15,10 @@ export const Handler = styled.div`
 export const DrawerBox = styled.div`
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: #0f1624;
 `;
 
-export const Close = styled.button`
+export const Close = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,14 +36,16 @@ export const Content = styled.div`
   flex-direction: column;
   padding-top: 100px;
   padding-bottom: 40px;
-  padding: 0 30px;
+  padding-right: 30px;
+  padding-left: 30px;
 `;
 
 export const Menu = styled.div`
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  a: {
+  a {
     font-size: 16px;
     font-weight: 500;
     color: text_white;
@@ -81,31 +83,32 @@ export const SocialIcon = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
-  color: text;
+  color: rgba(255, 255, 255, 0.75);
   font-size: 14;
   margin-right: 15px;
   transition: all 0.25s;
-  cursor: pointer;
 
   &:last-child {
     margin-right: 0;
   }
   &:hover {
-    color: secondary;
+    color: #fff;
+    opacity: 1;
+    cursor: pointer;
   }
 `;
 
-export const Button = styled.button`
-  color: white;
-  font-size: 14px;
-  font-weight: 700;
-  height: 45px;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 0;
-  padding-bottom: 0;
-`;
+// export const Button = styled.button`
+//   color: white;
+//   font-size: 14px;
+//   font-weight: 700;
+//   height: 45px;
+//   border-radius: 5px;
+//   cursor: pointer;
+//   width: 100%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   padding-top: 0;
+//   padding-bottom: 0;
+// `;
