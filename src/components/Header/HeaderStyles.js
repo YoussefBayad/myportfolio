@@ -15,45 +15,25 @@ const positionAnim = keyframes`
   }
 `;
 
-export const Container = styled.header`
+export const Header = styled.header`
   position: 'absolute';
   top: 0;
   left: 0;
-  display: grid;
-  /* grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 2rem; */
-  padding: 1rem;
-  padding-top: 2rem;
-
+  padding: 20px;
   background-color: 'transparent';
   transition: 'all 0.4s ease';
-
-  /* py: 4; */
   width: '100%';
-
   animation: ${positionAnim} 0.4s ease;
-  /* &.donate__btn: {
-      flexShrink: 0;
-      mr: [15; 20; null; null; 0];
-      ml: ['auto'; null; null; null; 0];
-    }; */
-  &.sticky {
-    position: 'fixed';
-    background-color: 'background';
-    color: '#000000';
-    box-shadow: '0 1px 2px rgba(0, 0, 0, 0.06)';
-    padding: 3 0;
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 60px);
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
-  }
 `;
+
+export const Container = styled.div`
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
 export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;
   display: flex;
@@ -63,13 +43,14 @@ export const Div1 = styled.div`
     grid-area: 1 / 1 / 2 / 3;
   }
 `;
+
 export const Div2 = styled.div`
-  grid-area: 1 / 2 / 2 / 4;
+  width: 50%;
   display: flex;
-  justify-content: space-around;
-  @media ${(props) => props.theme.breakpoints.sm} {
+  justify-content: space-between;
+  /* @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
-  }
+  } */
 `;
 export const Div3 = styled.div`
   grid-area: 1 / 5 / 2 / 6;
