@@ -48,7 +48,7 @@ export const Menu = styled.div`
   a {
     font-size: 16px;
     font-weight: 500;
-    color: text_white;
+    color: white;
     padding: 15px 0;
     cursor: pointer;
     border-bottom: 1px solid #e8e5e5;
@@ -97,18 +97,3 @@ export const SocialIcon = styled.span`
     cursor: pointer;
   }
 `;
-
-// export const Button = styled.button`
-//   color: white;
-//   font-size: 14px;
-//   font-weight: 700;
-//   height: 45px;
-//   border-radius: 5px;
-//   cursor: pointer;
-//   width: 100%;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   padding-top: 0;
-//   padding-bottom: 0;
-// `;

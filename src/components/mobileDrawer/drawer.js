@@ -18,6 +18,12 @@ export default function Drawer({
   return (
     <>
       <RcDrawer
+        // showMask={false}
+        // maskStyle={{
+        //   backgroundColor: 'red',
+        //   opacity: 1,
+
+        // }}
         open={open}
         onClose={toggleHandler}
         className={`drawer ${className || ''}`.trim()}
@@ -25,8 +31,7 @@ export default function Drawer({
         placement={placement}
         handler={false}
         duration={'0.4s'}
-        {...props}
-        style={{ backgroundColor: 'white' }}>
+        {...props}>
         {Close && <Close onClick={toggleHandler}>{closeButton}</Close>}
         <DrawerBox>{children} </DrawerBox>
       </RcDrawer>
