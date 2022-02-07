@@ -9,7 +9,7 @@ import {
   FaGithubAlt,
   FaDribbble,
 } from 'react-icons/fa';
-import menuItems from './header.data';
+import menuItems from '../../constants/header.data';
 import {
   Handler,
   DrawerBox,

@@ -24,6 +24,7 @@ export const Header = styled.header`
   transition: 'all 0.4s ease';
   width: '100%';
   animation: ${positionAnim} 0.4s ease;
+  
 `;
 
 export const Container = styled.div`
@@ -44,12 +45,27 @@ export const Div1 = styled.div`
   }
 `;
 
-export const Div2 = styled.div`
+export const Div2 = styled.nav`
   width: 50%;
   display: flex;
   justify-content: space-between;
   @media ${(props) => props.theme.breakpoints.lg} {
     display: none;
+  }
+
+  a {
+    font-size: 2rem;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.75);
+    transition: 0.2s ease;
+    &:hover {
+      color: #fff;
+      opacity: 1;
+      cursor: pointer;
+    }
+    @media ${(props) => props.theme.breakpoints.sm} {
+      padding: 0.5rem;
+    }
   }
 `;
 export const Div3 = styled.div`
@@ -59,22 +75,6 @@ export const Div3 = styled.div`
   align-items: center;
   @media ${(props) => props.theme.breakpoints.sm} {
     display: none;
-  }
-`;
-
-// Navigation Links
-export const NavLink = styled.a`
-  font-size: 2rem;
-  line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
-  transition: 0.4s ease;
-  &:hover {
-    color: #fff;
-    opacity: 1;
-    cursor: pointer;
-  }
-  @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.5rem;
   }
 `;
 
