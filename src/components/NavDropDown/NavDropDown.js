@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const DropDownContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 100%;
   background-color: #fff;
   border-radius: 8px;
   margin-bottom: 50px;
@@ -11,39 +11,34 @@ export const DropDownContainer = styled.div`
   padding-bottom: 4px;
   cursor: default;
 
-  @media ${(props) => props.theme.breakpoints.md} {
-    top: 32px;
-  }
-  @media ${(props) => props.theme.breakpoints.sm} {
-    top: 24px;
-  }
-`;
-export const DropDownItem = styled.a`
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  cursor: pointer;
-  transition: 0.3s ease;
-  padding: 12px 16px;
-  &:first-child {
-    padding-top: 20px;
-    border-radius: 8px 8px 0 0;
-    background-color: #eee;
-  }
+  a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    transition: 0.3s ease;
+    padding: 12px 16px;
+    &:first-child {
+      padding-top: 20px;
+      border-radius: 8px 8px 0 0;
+      background-color: #eee;
+    }
 
-  &:hover {
-    transform: scale(1.05);
-    background-color: #eee;
-    box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
-  }
+    &:hover {
+      transform: scale(1.05);
+      background-color: #eee;
+      box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.3);
+      border-radius: 8px;
+    }
 
-  &:nth-of-type(2n):hover {
-    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.3);
-  }
+    &:nth-of-type(2n):hover {
+      box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.3);
+    }
 
-  &:nth-of-type(3n):hover {
-    box-shadow: 0 -3px 6px 3px rgba(0, 0, 0, 0.3);
+    &:nth-of-type(3n):hover {
+      box-shadow: 0 -3px 6px 3px rgba(0, 0, 0, 0.3);
+    }
   }
 `;
 
