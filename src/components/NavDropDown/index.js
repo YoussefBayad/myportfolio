@@ -13,35 +13,38 @@ import {
 
 const NavDropDown = (props) => (
   <DropDownContainer active={props.isOpen}>
-    <DropDownItem href='#' target='_blank' rel='noreferrer'>
-      <DropDownIcon>
-        <AiFillPhone />
-      </DropDownIcon>
-      <DropDownTextContainer>
-        <DropDownItemTitle>Phone</DropDownItemTitle>
-        <DropDownItemDesc>
-          Let's get together and have a chat?'
-        </DropDownItemDesc>
-      </DropDownTextContainer>
-    </DropDownItem>
-    <DropDownItem href='#' target='_blank' rel='noreferrer'>
+    <DropDownItem href="mailto:bayadyoussef20@gmail.com?subject=🤘 Hi Jo, I'd like to hire you">
       <DropDownIcon>
         <AiOutlineMail />
       </DropDownIcon>
       <DropDownTextContainer>
         <DropDownItemTitle>Email</DropDownItemTitle>
         <DropDownItemDesc>
-          If you want to talk jus send a message and I'll get back
+          Got a question or proposal, or just want to say hello 👋 ? Go ahead.
         </DropDownItemDesc>
       </DropDownTextContainer>
     </DropDownItem>
+    <DropDownItem href='#' rel='noreferrer'>
+      <DropDownIcon>
+        <AiFillPhone />
+      </DropDownIcon>
+      <DropDownTextContainer>
+        <DropDownItemTitle>Phone</DropDownItemTitle>
+        <DropDownItemDesc>
+          Let's get together and have a chat "+212607267677"
+        </DropDownItemDesc>
+      </DropDownTextContainer>
+    </DropDownItem>
+
     <DropDownItem href='#' target='_blank' rel='noreferrer'>
       <DropDownIcon>
         <FaLocationArrow />
       </DropDownIcon>
       <DropDownTextContainer>
         <DropDownItemTitle>Slack</DropDownItemTitle>
-        <DropDownItemDesc>1405, Angelus Dr, Florissant. Mo</DropDownItemDesc>
+        <DropDownItemDesc>
+          Let's get together and have a chat on Slack
+        </DropDownItemDesc>
       </DropDownTextContainer>
     </DropDownItem>
   </DropDownContainer>

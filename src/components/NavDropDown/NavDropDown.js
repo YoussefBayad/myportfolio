@@ -7,15 +7,9 @@ export const DropDownContainer = styled.div`
   background-color: #fff;
   border-radius: 8px;
   margin-bottom: 50px;
-  z-index: 100;
-  padding: 4px 0;
+  margin-top: 10px;
+  padding-bottom: 4px;
   cursor: default;
-  overflow: hidden;
-  transition: 0.3s ease;
-  visibility: ${({ active }) => (active ? 'visible' : 'hidden')};
-  opacity: ${({ active }) => (active ? '1' : '0')};
-  transform-origin: top;
-  transform: ${({ active }) => (active ? 'scaleY(1)' : 'scaleY(.3)')};
 
   @media ${(props) => props.theme.breakpoints.md} {
     top: 32px;
@@ -31,11 +25,17 @@ export const DropDownItem = styled.a`
   cursor: pointer;
   transition: 0.3s ease;
   padding: 12px 16px;
+  &:first-child {
+    padding-top: 20px;
+    border-radius: 8px 8px 0 0;
+    background-color: #eee;
+  }
 
   &:hover {
     transform: scale(1.05);
     background-color: #eee;
     box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
   }
 
   &:nth-of-type(2n):hover {
@@ -66,7 +66,7 @@ export const DropDownItemTitle = styled.h2`
 `;
 
 export const DropDownItemDesc = styled.p`
-  color: #0f1624;
+  color: black;
   opacity: 0.5;
   font-size: 14px;
   line-height: 22px;

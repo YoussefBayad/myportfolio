@@ -66,7 +66,7 @@ export default function MobileDrawer() {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
+                duration={100}
                 key={i}>
                 {menuItem.label}
               </Link>
