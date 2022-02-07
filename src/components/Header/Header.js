@@ -19,10 +19,8 @@ export default ({ className }) => (
   <Header className={className}>
     <Container>
       <Div1>
-        <Link href='/'>
-          <a style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
-            <DiCssdeck size='3rem' /> <span>Portfolio</span>
-          </a>
+        <Link to='hero' smooth={true} offset={-70} duration={100}>
+          <DiCssdeck size='3rem' /> <span>Portfolio</span>
         </Link>
       </Div1>
       <Div2>
@@ -33,7 +31,7 @@ export default ({ className }) => (
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={100}
             key={i}>
             {menuItem.label}
           </Link>

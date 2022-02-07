@@ -24,7 +24,6 @@ export const Header = styled.header`
   transition: 'all 0.4s ease';
   width: '100%';
   animation: ${positionAnim} 0.4s ease;
-  
 `;
 
 export const Container = styled.div`
@@ -36,10 +35,15 @@ export const Container = styled.div`
 `;
 
 export const Div1 = styled.div`
-  grid-area: 1 / 1 / 2 / 2;
   display: flex;
   flex-direction: row;
   align-content: center;
+  a {
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 1 / 1 / 2 / 3;
   }
