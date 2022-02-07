@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import RcDrawer from 'rc-drawer';
 
 export default function Drawer({
