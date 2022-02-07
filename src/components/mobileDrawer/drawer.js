@@ -18,12 +18,6 @@ export default function Drawer({
   return (
     <>
       <RcDrawer
-        // showMask={false}
-        // maskStyle={{
-        //   backgroundColor: 'red',
-        //   opacity: 1,
-
-        // }}
         open={open}
         onClose={toggleHandler}
         className={`drawer ${className || ''}`.trim()}
