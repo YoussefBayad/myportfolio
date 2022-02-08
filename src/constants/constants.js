@@ -1,24 +1,25 @@
 export const projects = [
   {
-    title: 'MERN Memories',
-    description:
-      "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-    image: '/images/1.png',
-    tags: ['Mongo', 'Express', 'React', 'Node'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 0,
-  },
-  {
-    title: 'templete One',
+    title: 'Template One',
     description:
       "Modern design website for your agency , iT is a fast optimized 'SEO' website build with the latest technologies Nextjs React Framer motion and theme UI",
     image: '/images/2.png',
-    tags: ['React', 'Nextjs', 'Theme UI'],
+    tags: ['React', 'Next js', 'Theme UI'],
     source: 'https://github.com/YoussefBayad/templetone',
-    visit: 'https://templetone.vercel.app/',
+    visit: 'https://templateone.vercel.app/',
+    id: 0,
+  },
+  {
+    title: 'Template two',
+    description:
+      "Modern design website for your agency , iT is a fast optimized 'SEO' website build with the latest technologies Nextjs React Framer motion and theme UI",
+    image: '/images/2.png',
+    tags: ['React', 'Next js', 'Theme UI'],
+    source: 'https://github.com/YoussefBayad/templatetwo',
+    visit: 'https://templatetwo.vercel.app/',
     id: 1,
   },
+
   {
     title: 'Homie app',
     description:
