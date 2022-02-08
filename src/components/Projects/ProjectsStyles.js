@@ -87,10 +87,12 @@ export const UtilityList = styled.ul`
 
 export const ExternalLinks = styled.a`
   color: #d4c0c0;
+  width: 80px;
   font-size: 1.6rem;
-  padding: 1rem 1.5rem;
+  padding: 1.5rem 1rem;
   background: #6b3030;
-  border-radius: 15px;
+
+  border-radius: 10px;
   transition: 0.5s;
   &:hover {
     background: #801414;
