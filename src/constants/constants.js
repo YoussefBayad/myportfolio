@@ -10,13 +10,13 @@ export const projects = [
     id: 0,
   },
   {
-    title: 'E-Commerce',
+    title: 'templete One',
     description:
-      "While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
+      "Modern design website for your agency , iT is a fast optimized 'SEO' website build with the latest technologies Nextjs React Framer motion and theme UI",
     image: '/images/2.png',
-    tags: ['React', 'JavaScript'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    tags: ['React', 'Nextjs', 'Theme UI'],
+    source: 'https://github.com/YoussefBayad/templetone',
+    visit: 'https://templetone.vercel.app/',
     id: 1,
   },
   {
