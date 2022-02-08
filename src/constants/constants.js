@@ -13,7 +13,7 @@ export const projects = [
     title: 'Template two',
     description:
       "Modern design website for your agency , iT is a fast optimized 'SEO' website build with the latest technologies Nextjs React Framer motion and theme UI",
-    image: '/images/2.png',
+    image: '/images/1.png',
     tags: ['React', 'Next js', 'Theme UI'],
     source: 'https://github.com/YoussefBayad/templatetwo',
     visit: 'https://templatetwo.vercel.app/',
