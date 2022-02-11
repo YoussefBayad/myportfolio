@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-import { DiCssdeck } from 'react-icons/di';
 import { SocialLinks } from '../../constants/constants';
 import MobileDrawer from '../mobileDrawer';
 import menuItems from '../../constants/header.data';
@@ -15,13 +14,15 @@ import {
   SocialIcons,
 } from './HeaderStyles';
 
-export default ({ className }) => (
+const HeaderMain = ({ className }) => (
   <Header className={className}>
     <Container>
       <Div1>
-        <Link to='hero' smooth={true} offset={-70} duration={100}>
-          <DiCssdeck size='3rem' /> <span>Portfolio</span>
-        </Link>
+        <img
+          src='/images/logo.png'
+          style={{ display: 'flex', width: '40px' }}
+          alt='logo'
+        />
       </Div1>
       <Div2>
         {menuItems.map((menuItem, i) => (
@@ -52,3 +53,5 @@ export default ({ className }) => (
     </Container>
   </Header>
 );
+
+export default HeaderMain;
