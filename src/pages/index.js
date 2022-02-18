@@ -4,7 +4,7 @@ import Acomplishments from "../components/Acomplishments/Acomplishments";
 import Contact from "../components/Contact/Contact";
 import BgAnimation from "../components/BackgrooundAnimation/BackgroundAnimation";
 import Hero from "../components/Hero/Hero";
-import SEO from "../components/SEO";
+import SEO from "../components/seo";
 import Projects from "../components/Projects/Projects";
 import Technologies from "../components/Technologies/Technologies";
 import Timeline from "../components/TimeLine/TimeLine";
