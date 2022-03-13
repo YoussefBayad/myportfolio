@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Img = styled.img`
   width: 100%;
@@ -31,6 +31,7 @@ export const BlogCard = styled.div`
   /* height: 600px; */
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
+    padding: 20px;
   }
 `;
 export const TitleContent = styled.div`
@@ -44,7 +45,7 @@ export const HeaderThree = styled.h3`
   letter-spacing: 2px;
   color: #9cc9e3;
   padding: 0.5rem 0;
-  font-size: ${(props) => (props.title ? '3rem' : '2rem')};
+  font-size: ${(props) => (props.title ? "3rem" : "2rem")};
 `;
 
 export const Hr = styled.hr`
@@ -59,7 +60,7 @@ export const Intro = styled.div`
   width: 170px;
   margin: 0 auto;
   color: #dce3e7;
-  font-family: 'Droid Serif', serif;
+  font-family: "Droid Serif", serif;
   font-size: 13px;
   font-style: italic;
   line-height: 18px;
