@@ -20,7 +20,7 @@ const GlobalStyles = createGlobalStyle`
     background: ${(props) => props.theme.colors.background1};
     color: ${(props) => props.theme.colors.primary1};
     cursor: default;
-    overflow:hidden;
+    
   }
  
   .sticky {
